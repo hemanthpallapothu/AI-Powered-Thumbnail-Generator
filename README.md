@@ -1,109 +1,124 @@
-🚀 Thumblify — AI Powered Thumbnail Generator
+# 🚀 Thumblify — AI Powered Thumbnail Generator
 
 Thumblify is a full-stack AI-powered thumbnail generation platform built for creators who want fast, visually engaging, YouTube-style thumbnails.
 
 The application combines:
 
-* 🎨 AI thumbnail generation
-* 🔁 Thumbnail recreation workflow
-* 🔐 JWT authentication
-* 💳 Credit-based usage system
-* 🌍 Community feed
-* 📚 Personal thumbnail library
-* ⚡ Groq-powered prompt optimization
-* 🖼️ Pollinations image generation
+- 🎨 AI thumbnail generation
+- 🔁 Thumbnail recreation workflow
+- 🔐 JWT authentication
+- 💳 Credit-based usage system
+- 🌍 Community feed
+- 📚 Personal thumbnail library
+- ⚡ Groq-powered prompt optimization
+- 🖼️ Pollinations image generation
 
-⸻
+---
 
-✨ Features
+# ✨ Features
 
-🔐 Authentication System
+## 🔐 Authentication System
 
-* User Signup & Login
-* JWT-based authentication
-* Protected routes
-* Persistent login sessions
+- User Signup & Login
+- JWT-based authentication
+- Protected routes
+- Persistent login sessions
 
-🎨 AI Thumbnail Generation
+---
+
+## 🎨 AI Thumbnail Generation
 
 Generate thumbnails using:
 
-* Topic/title
-* Style presets
-* Aspect ratio
-* Color palettes
-* Additional prompts
-* Optional source image
+- Topic/title
+- Style presets
+- Aspect ratio
+- Color palettes
+- Additional prompts
+- Optional source image
 
-🔁 Recreate Mode
+---
+
+## 🔁 Recreate Mode
 
 Modify existing thumbnail concepts using:
 
-* Source image URL
-* Change request
-* Updated style and palette
+- Source image URL
+- Change request
+- Updated style and palette
 
-🧠 Prompt Optimization
+---
+
+## 🧠 Prompt Optimization
 
 Groq AI rewrites user prompts into:
 
-* Cleaner prompts
-* Thumbnail-focused prompts
-* Better visual outputs
+- Cleaner prompts
+- Thumbnail-focused prompts
+- Better visual outputs
 
-💳 Credit System
+---
 
-* Each user starts with 15 credits
-* 1 credit deducted per generation
+## 💳 Credit System
 
-📚 Personal Library
+- Each user starts with 15 credits
+- 1 credit deducted per generation
+
+---
+
+## 📚 Personal Library
 
 Users can:
 
-* View generated thumbnails
-* Delete thumbnails
-* Download thumbnails
+- View generated thumbnails
+- Delete thumbnails
+- Download thumbnails
 
-🌍 Community Feed
+---
 
-* Browse public thumbnails
-* Explore trending ideas
-* Like community thumbnails
+## 🌍 Community Feed
 
-⚡ Smart Preview Retry
+- Browse public thumbnails
+- Explore trending ideas
+- Like community thumbnails
+
+---
+
+## ⚡ Smart Preview Retry
 
 Recreate thumbnails automatically retry loading for smoother UX.
 
-⸻
+---
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-Frontend
+## Frontend
 
-* React 18
-* Vite
-* Tailwind CSS
-* React Router v6
-* Context API
+- React 18
+- Vite
+- Tailwind CSS
+- React Router v6
+- Context API
 
-Backend
+## Backend
 
-* Node.js
-* Express.js
-* MongoDB Atlas
-* Mongoose
-* JWT Authentication
-* Groq SDK
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- Groq SDK
 
-AI Services
+## AI Services
 
-* Groq API
-* Pollinations AI
+- Groq API
+- Pollinations AI
 
-⸻
+---
 
-📂 Complete Project Structure
+# 📂 Complete Project Structure
 
+```bash
 AI-Powered Thumbnail Generator (Thumblify)/
 │
 ├── client/
@@ -146,7 +161,6 @@ AI-Powered Thumbnail Generator (Thumblify)/
 │   │   ├── index.css
 │   │   └── main.jsx
 │   │
-│   ├── .env
 │   ├── package.json
 │   ├── vite.config.js
 │   └── tailwind.config.js
@@ -178,7 +192,6 @@ AI-Powered Thumbnail Generator (Thumblify)/
 │   │   ├── thumbnailHelpers.js
 │   │   └── token.js
 │   │
-│   ├── .env
 │   ├── package.json
 │   └── server.js
 │
@@ -186,164 +199,191 @@ AI-Powered Thumbnail Generator (Thumblify)/
 ├── .gitignore
 ├── README.md
 └── package-lock.json
+```
 
-⸻
+---
 
-⚙️ Environment Variables
+# ⚙️ Environment Variables
 
-Server .env
+## Server `.env`
 
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 GROQ_API_KEY=your_groq_api_key
 GROQ_MODEL=llama-3.3-70b-versatile
 CLIENT_URL=http://localhost:5173
 PORT=5000
+```
 
-Client .env
+---
 
+## Client `.env`
+
+```env
 VITE_API_URL=http://localhost:5000/api
+```
 
-⸻
+---
 
-🚀 Installation & Setup
+# 🚀 Installation & Setup
 
-1️⃣ Clone Repository
+## 1️⃣ Clone Repository
 
+```bash
 git clone https://github.com/your-username/thumblify.git
 cd thumblify
+```
 
-⸻
+---
 
-2️⃣ Install Backend Dependencies
+## 2️⃣ Install Backend Dependencies
 
+```bash
 cd server
 npm install
+```
 
-⸻
+---
 
-3️⃣ Install Frontend Dependencies
+## 3️⃣ Install Frontend Dependencies
 
+```bash
 cd ../client
 npm install
+```
 
-⸻
+---
 
-▶️ Run the Application
+# ▶️ Run the Application
 
-Start Backend
+## Start Backend
 
+```bash
 cd server
 npm run dev
+```
 
-Start Frontend
+---
 
+## Start Frontend
+
+```bash
 cd client
 npm run dev
+```
 
-⸻
+---
 
-🌐 Local URLs
+# 🌐 Local URLs
 
-Service	URL
-Frontend	http://localhost:5173
-Backend	http://127.0.0.1:5000
+| Service | URL |
+|---|---|
+| Frontend | http://localhost:5173 |
+| Backend | http://127.0.0.1:5000 |
 
-⸻
+---
 
-🔐 API Endpoints
+# 🔐 API Endpoints
 
-Authentication
+## Authentication
 
-Method	Endpoint
-POST	/api/auth/signup
-POST	/api/auth/login
-GET	/api/auth/me
+| Method | Endpoint |
+|---|---|
+| POST | `/api/auth/signup` |
+| POST | `/api/auth/login` |
+| GET | `/api/auth/me` |
 
-AI Generation
+---
 
-Method	Endpoint
-POST	/api/ai/generate-thumbnail
+## AI Generation
 
-Thumbnails
+| Method | Endpoint |
+|---|---|
+| POST | `/api/ai/generate-thumbnail` |
 
-Method	Endpoint
-GET	/api/thumbnails
-DELETE	/api/thumbnails/:id
-GET	/api/thumbnails/community
-POST	/api/thumbnails/community/:id/like
+---
 
-⸻
+## Thumbnails
 
-🧠 How It Works
+| Method | Endpoint |
+|---|---|
+| GET | `/api/thumbnails` |
+| DELETE | `/api/thumbnails/:id` |
+| GET | `/api/thumbnails/community` |
+| POST | `/api/thumbnails/community/:id/like` |
+
+---
+
+# 🧠 How It Works
 
 1. User logs in
 2. JWT token stored locally
 3. User opens Generate Studio
 4. User chooses:
-    * Generate Mode
-    * Recreate Mode
+   - Generate Mode
+   - Recreate Mode
 5. Backend optimizes prompt using Groq
 6. Pollinations generates image
 7. Thumbnail stored in MongoDB
 8. Credits updated
 9. Thumbnail appears in:
-    * My Generations
-    * Community Feed
+   - My Generations
+   - Community Feed
 
-⸻
+---
 
-🎯 Core Advantages
+# 🎯 Core Advantages
 
-✅ Creator-focused workflow
-✅ AI prompt enhancement
-✅ Thumbnail recreation support
-✅ JWT protected system
-✅ Persistent thumbnail storage
-✅ Community inspiration feed
-✅ Modern MERN architecture
-✅ Free-tier AI integration
+- ✅ Creator-focused workflow
+- ✅ AI prompt enhancement
+- ✅ Thumbnail recreation support
+- ✅ JWT protected system
+- ✅ Persistent thumbnail storage
+- ✅ Community inspiration feed
+- ✅ Modern MERN architecture
+- ✅ Free-tier AI integration
 
-⸻
+---
 
-🔒 Security Best Practices
+# 🔒 Security Best Practices
 
-* Never commit .env files
-* Use .env.example
-* Rotate leaked credentials immediately
-* Store secrets in environment variables only
+- Never commit `.env` files
+- Use `.env.example`
+- Rotate leaked credentials immediately
+- Store secrets in environment variables only
 
-⸻
+---
 
-📸 Screenshots
+# 📸 Screenshots
 
-Add your project screenshots here.
+_Add your project screenshots here._
 
-⸻
+---
 
-🧑‍💻 Author
+# 🧑‍💻 Author
 
 Developed by Hemanth Pallapothu
 
-⸻
+---
 
-⭐ Future Improvements
+# ⭐ Future Improvements
 
-* Payment integration
-* Advanced thumbnail templates
-* AI face enhancement
-* Real-time collaboration
-* Prompt history analytics
-* Multi-language thumbnail generation
+- Payment integration
+- Advanced thumbnail templates
+- AI face enhancement
+- Real-time collaboration
+- Prompt history analytics
+- Multi-language thumbnail generation
 
-⸻
+---
 
-📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
 
-⸻
+---
 
-💡 Inspiration
+# 💡 Inspiration
 
 Built for creators who want to move from idea → thumbnail → publish faster using AI.
