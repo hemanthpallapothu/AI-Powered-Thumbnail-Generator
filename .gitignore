@@ -1,4 +1,5 @@
 .env
 server/.env
 client/.env
-.vscode/
+.vscode/node_modules
+frontend.log

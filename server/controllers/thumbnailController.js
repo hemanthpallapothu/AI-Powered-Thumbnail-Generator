@@ -97,7 +97,6 @@ const proxyThumbnailImage = async (req, res, next) => {
       });
     }
 
-    const buffer = Buffer.from(await response.arrayBuffer());
     const contentType = response.headers.get("content-type") || "image/jpeg";
     const cacheControl = response.headers.get("cache-control");
 
@@ -107,7 +106,9 @@ const proxyThumbnailImage = async (req, res, next) => {
       res.setHeader("Cache-Control", cacheControl);
     }
 
-    return res.send(buffer);
+    const { Readable } = require("stream");
+    const nodeStream = Readable.fromWeb(response.body);
+    nodeStream.pipe(res);
   } catch (error) {
     next(error);
   }

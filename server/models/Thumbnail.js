@@ -58,4 +58,7 @@ const thumbnailSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+thumbnailSchema.index({ visibility: 1, createdAt: -1 });
+thumbnailSchema.index({ userId: 1, createdAt: -1 });
+
 module.exports = mongoose.model("Thumbnail", thumbnailSchema);
